@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPELIN AJA - Tutor Private</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #6ab04c; /* Hijau Katak */
+            --dark-green: #2d3436;
+            --light-bg: #eafbea; /* Latar belakang mint lembut */
+            --lily-pad: #badc58;
+            --white: #ffffff;
+            --accent: #f9ca24;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(#badc58 15%, transparent 16%), radial-gradient(#badc58 15%, transparent 16%);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            opacity: 1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(106, 176, 76, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid var(--primary-green);
+        }
+
+        /* Dekorasi Katak */
+        .mascot {
+            font-size: 80px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+            display: inline-block;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--primary-green);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        p.subtitle {
+            font-size: 1rem;
+            color: #636e72;
+            margin-bottom: 30px;
+        }
+
+        /* Kartu Link */
+        .link-card {
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            border: 2px solid var(--lily-pad);
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--dark-green);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--lily-pad);
+            border-color: var(--primary-green);
+            box-shadow: 0 10px 20px rgba(106, 176, 76, 0.3);
+        }
+
+        .link-card:hover h3 {
+            color: #1e272e;
+        }
+
+        .icon-box {
+            font-size: 28px;
+            margin-right: 15px;
+            background: var(--light-bg);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .text-content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .text-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .text-content p {
+            font-size: 0.85rem;
+            color: #636e72;
+            line-height: 1.3;
+        }
+
+        .tutor-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+            margin-top: 5px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #b2bec3;
+        }
+
+        /* Hiasan Daun */
+        .leaf {
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            z-index: -1;
+            color: var(--primary-green);
+        }
+        .leaf-1 { top: -20px; left: -20px; transform: rotate(-45deg); }
+        .leaf-2 { bottom: -20px; right: -20px; transform: rotate(135deg); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="leaf leaf-1">🍃</div>
+        <div class="leaf leaf-2">🍃</div>
+
+        <div class="mascot">🐸</div>
+        <h1>SIMPELIN AJA</h1>
+        <p class="subtitle">Hai selamat datang, kenalin aku katak baik warna hijau, kalau goodmood aku bisa berubah warna jadi kuning, biru, merah muda atau coklat kayak gooday</p>
+
+        <a href="https://calendly.com/robylearns/30min" target="_blank" class="link-card">
+            <div class="icon-box">📊</div>
+            <div class="text-content">
+                <h3>Fundamental Accounting</h3>
+                <p>Tutor: <strong>Roby</strong> (Katak Jahat) </p>
+                <div class="tutor-badge">Booking via Calendly</div>
+            </div>
+        </a>
+
+        <a href="https://wa.me/6287755996469" target="_blank" class="link-card">
+            <div class="icon-box">🧮</div>
+            <div class="text-content">
+                <h3>Mathematics for Business</h3>
+                <p>Tutor: <strong>Irma</strong> (1st Winner & Best Speaker of AMC 2025)</p>
+                <div class="tutor-badge">Chat via WhatsApp</div>
+            </div>
+        </a>
+
+        <div class="footer">
+            &copy; 2025 Simpelin Aja. Ribet? Skip aja.
+        </div>
+    </div>
+
+</body>
+</html>
